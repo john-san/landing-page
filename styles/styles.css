@@ -1,0 +1,35 @@
+body {
+	background-color: #EDEDEE;
+	padding: 12px;
+}
+
+#header-img {
+	max-width: 32px;
+	max-height: 32px;
+	height: auto;
+	margin-right: 8px;
+}
+
+#brand-name {
+	font-size: 24px;
+}
+
+#branding {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 100% width column on mobile */
+.two-grid-md {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 100%);
+}
+
+@media (min-width:768px) {
+	.two-grid-md {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 50% 50%);
+	}
+}
