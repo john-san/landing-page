@@ -7,6 +7,11 @@ body {
   padding: 0 2.5%;
 }
 
+div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #header-img {
 	max-width: 32px;
 	max-height: 32px;
@@ -47,13 +52,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
+}
+
+input, #sign-up-caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input#email {
+  padding: 5px;
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+#submit {
+  background-color: #f1c40f;
+  max-width: 150px;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* responsive iframe */
 #video-container {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 50%;
+  margin: 0 auto; 
 }
 
 #video {
@@ -63,6 +91,9 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+  display: block;
+  max-width: 560px;
+  max-height: 315px;
 }
 
 @media (min-width:768px) {
