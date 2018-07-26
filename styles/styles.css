@@ -1,5 +1,6 @@
 :root {
   --light-gold: #f1c40f;
+  --dark-gold: orange;
   --background-color: #EDEDEE;
   --dark-grey: #DCDCDC;
 }
@@ -9,6 +10,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-size: 18px;
+	padding-top: 200px; /* space for fixed header*/
 }
 
 .container {
@@ -31,8 +33,32 @@ h2 {
   border: 0;
   text-transform: uppercase;
   margin: 10px auto;
+  cursor: pointer;
 }
 
+.btn:hover {
+  animation-name: change-gold;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change-gold {
+  0% {
+    background-color: var(--light-gold);
+  }
+  100% {
+    background-color: var(--dark-gold);
+  }
+}
+
+
+/*  sticky header */
+header {
+  position: fixed;
+  width: 100%;
+  background: var(--background-color);
+  top: 0;
+}
 
 #header-img {
 	max-width: 32px;
@@ -184,6 +210,9 @@ footer {
 }
 
 @media (min-width:768px) {
+  body {
+    padding-top: 100px;
+  }
   .container {
     max-width: 85%;
     margin: 0 auto;
@@ -224,6 +253,7 @@ footer {
 }
 
 @media (min-width:950px) {
+  
   #nav-bar ul {
     display: flex;
     flex-direction: row;
@@ -234,7 +264,7 @@ footer {
 }
 
 @media (min-width:1400px) {
-  .nine-three-md {
-    grid-template-columns: repeat(auto-fit, 66.6% 33.3%);r
+  .nine-three-lg {
+    grid-template-columns: repeat(auto-fit, 66.6% 33.3%);
   }
 }
