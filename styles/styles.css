@@ -1,11 +1,12 @@
 body {
 	background-color: #EDEDEE;
-	padding: 12px;
+	padding: 0;
+	margin: 0;
 	font-size: 18px;
 }
 
 .container {
-  padding: 0 2.5%;
+  padding: 0 5%;
 }
 
 div {
@@ -110,7 +111,7 @@ input#email {
 
 #pricing {
 	max-width: 300px;
-	margin: 0 auto;
+	margin: 0 auto 30px auto;
 }
 
 
@@ -147,6 +148,31 @@ input#email {
 	border-radius: 4px;
 }
 
+footer {
+	background-color: #DCDCDC;
+	text-align: right;
+	width: 100%;
+	padding: 8px 16px;
+}
+
+
+
+#footer-nav-list {
+	list-style: none;
+}
+
+#footer-nav-list li {
+	display: inline;
+	margin: 5px 8px;
+}
+
+#footer-nav-list li:last-of-type {
+	margin-right: 0;
+}
+
+#copyright {
+	margin: 5px 0 15px 0;
+}
 
 @media (min-width:768px) {
 	.nine-three-md {
