@@ -1,6 +1,7 @@
 body {
 	background-color: #EDEDEE;
 	padding: 12px;
+	font-size: 18px;
 }
 
 .container {
@@ -43,7 +44,7 @@ div {
 }
 
 /* 100% width column on mobile */
-.nine-three-md, .twenty-eighty-md {
+.nine-three-md, .twenty-eighty-md, .four-four-four-md {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 100%);
 }
@@ -74,17 +75,27 @@ input#email {
   border: 0;
   font-weight: 700;
   font-size: 16px;
+	border-radius: 4px;
 }
 
 #features {
   text-align: center;  
 }
 
+.feature-description h2 {
+	margin: 0 0 5px 0;
+}
+
+.feature-description p {
+	margin: 5px 0 0 0;
+}
+
 #video-container {
   /*position: relative;
   overflow: hidden;
   padding-top: 50%;*/
- text-align: center;
+	text-align: center;
+	margin: 40px 0 40px 0;
 }
 
 #video {
@@ -96,6 +107,46 @@ input#email {
   max-width: 100%;
   max-height: 100%;
 }
+
+#pricing {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+
+.price-card {
+	border: 1px solid black;
+	border-radius: 4px;
+	text-align: center;
+}
+.price-class {
+	background-color: #DCDCDC;
+	text-transform: uppercase;
+	margin: 0 auto 10px auto;
+	padding: 10px 0 10px 0;
+}
+
+.price {
+	font-size: 28px;
+	font-weight: 700;
+	margin: 0 auto;
+}
+
+.class-benefits {
+	list-style: none;
+	padding: 0;
+}
+
+.price-btn {
+	padding: 10px 14px;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 10px 0 10px 0;
+	border: 0;
+	background-color: #EBC81F;
+	border-radius: 4px;
+}
+
 
 @media (min-width:768px) {
 	.nine-three-md {
@@ -109,6 +160,12 @@ input#email {
     align-items: center;
 	}
 	
+	.four-four-four-md {
+		display: grid;
+    grid-template-columns: repeat(auto-fit, 33.3% 33.3% 33.3%);
+    grid-column-gap: 15px;
+	}
+	
 	#branding {
 	  justify-content: flex-start;
 	}
@@ -119,6 +176,10 @@ input#email {
 	
 	.feature-description {
 	  justify-self: start;
+	}
+	
+	#pricing {
+		max-width: 100%;
 	}
 }
 
